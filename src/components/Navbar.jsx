@@ -1,6 +1,7 @@
 import React from 'react';
-import Logo from '../assets/logo.svg';
 import { Copy } from '@icon-park/react';
+import DeveloperImage from '../assets/developer_image.jpg';
+import Logo from '../assets/logo.svg';
 
 const Navbar = () => {
   const email = 'prajwol.devkota016@gmail.com';
@@ -22,9 +23,9 @@ const Navbar = () => {
             work
           </a>
         </div>
-        <p className='font-medium text-lg uppercase -mr-20'>let's connect</p>
+        <p className='font-medium text-lg uppercase -mr-24'>let's connect</p>
         <div className='flex flex-row items-center border rounded-full px-6 py-2 bg-[#FFFFFF] shadow shadow-blue-500/50 cursor-pointer'>
-          <p className='font-medium  text-lg flex flex-row justify-center items-center mr-2'>
+          <p className='font-light  text-base flex flex-row justify-center items-center mr-2'>
             {email}
           </p>
 
@@ -57,6 +58,15 @@ const Navbar = () => {
           </p>
         </div>
       </div>
+      {/* full fledged image holder */}
+      <div className='flex flex-row justify-center w-full h-screen'>
+        <img
+          className='border-transparent rounded-[7%] shadow-2xl'
+          src={DeveloperImage}
+          alt="developers' image"
+        />
+      </div>
+      {/* description and motivatation */}
     </div>
   );
 };
