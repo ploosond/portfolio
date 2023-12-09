@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '../assets/logo.svg';
 import { Copy } from '@icon-park/react';
 
 const Navbar = () => {
@@ -6,17 +7,26 @@ const Navbar = () => {
   return (
     <div className='w-full h-screen'>
       {/* logo and navbar */}
-      <div className='flex flex-row justify-around items-center mt-10 antialiased'>
-        <div className='flex flex-row justify-around items-center'>
-          <div className='font-bold text-xl uppercase'>prajwol devkota</div>
-          <div className='font-medium  text-base ml-10 uppercase'>about</div>
-          <div className='font-medium  text-base ml-5 uppercase'>work</div>
+      <div className='flex flex-row justify-around items-center mt-10'>
+        <div className='flex flex-row w-[50%] justify-center items-center'>
+          <a href='/'>
+            <img className='w-20 h-20 basis-1/6' src={Logo} alt='logo' />
+          </a>
+          <a
+            href='/'
+            className='font-medium  text-lg  uppercase basis-1/5 text-center'
+          >
+            about
+          </a>
+          <a href='/' className='font-medium  text-lg uppercase basis-1/5'>
+            work
+          </a>
         </div>
-        <div className='antialiased font-medium  text-base -mr-72 uppercase pt-2'>
-          let's connect
-        </div>
-        <div className='flex flex-row justify-center items-center border rounded-full px-6 py-2 bg-[#FFFFFF] shadow shadow-blue-500/50 cursor-pointer'>
-          <div className='font-extralight mr-2'>{email}</div>
+        <p className='font-medium text-lg uppercase -mr-20'>let's connect</p>
+        <div className='flex flex-row items-center border rounded-full px-6 py-2 bg-[#FFFFFF] shadow shadow-blue-500/50 cursor-pointer'>
+          <p className='font-medium  text-lg flex flex-row justify-center items-center mr-2'>
+            {email}
+          </p>
 
           <Copy
             theme=''
@@ -29,26 +39,22 @@ const Navbar = () => {
       </div>
       {/* introduction and current status */}
       <div className='flex flex-col justify-center text-center h-full -mt-10 px-20'>
-        <div className='font-serif text-6xl font-black self-start ml-48 text-slate-800'>
+        <p className='font-serif text-6xl font-black self-start ml-48 text-slate-800'>
           I'm a
-        </div>
-        <div className='font-serif text-9xl font-black text-slate-800 -mb-4'>
-          FULL STACK
-        </div>
-        <div className='font-serif text-9xl font-black text-slate-800 -mb-4'>
-          SOFTWARE
-        </div>
-        <div className='font-serif text-9xl font-black text-slate-800'>
-          DEVELOPER<span className='ml-4 text-rose-500'>.</span>
-        </div>
+        </p>
+        <p className='font-serif text-9xl font-black -mb-4'>FULL STACK</p>
+        <p className='font-serif text-9xl font-black -mb-4'>SOFTWARE</p>
+        <p className='font-serif text-9xl font-black'>
+          DEVELOPER<span className='ml-4 text-[#FF0066]'>.</span>
+        </p>
         {/* current status */}
         <div className='uppercase flex flex-row justify-center font-medium  text-base py-6'>
-          <div className='mr-20'>
+          <p className='mr-20'>
             currently stuyding <br /> Master Degree at HSRW
-          </div>
-          <div className='flex flex-row justify-center items-center'>
+          </p>
+          <p className='flex flex-row justify-center items-center'>
             (2022-present)
-          </div>
+          </p>
         </div>
       </div>
     </div>
