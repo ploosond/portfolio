@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
-        serif: ['Cinzel', 'serif'],
+        inter: ['Inter', 'sans-serif'],
+        interTight: ['Inter Tight', 'sans-serif'],
       },
     },
   },
