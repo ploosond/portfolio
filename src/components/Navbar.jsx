@@ -24,7 +24,7 @@ const Navbar = () => {
             LET'S CONNECT
           </p>
           <div className='hidden xl:flex items-center space-x-1 bg-[#FFFFFF] border-2 rounded-full py-2 px-4 shadow-lg shadow-cyan-500/50'>
-            <p className='hidden xl:block text-base font-semibold leading-[22px] '>
+            <p className='hidden xl:block text-base font-medium leading-[22px] '>
               prajwol.devkota016@gmail.com
             </p>
             <CopyLink
@@ -59,7 +59,7 @@ const Navbar = () => {
         </p>
       </div>
       {/* current status */}
-      <div className='flex flex-col lg:flex-row lg:justify-evenly text-center font-inter text-[16px] font-medium leading-[19px] tracking-[-.06em]'>
+      <div className='flex flex-col lg:flex-row lg:justify-center lg:space-x-10 text-center font-inter text-[16px] font-medium leading-[19px] tracking-[-.06em] text-[#6D6D6D]'>
         <div className='lg:grow-0'>
           <p>CURRENTLY PURSUING A MASTER DEGREE</p>
           <p>AT HOCHSCHULE RHEIN-WAAL</p>
