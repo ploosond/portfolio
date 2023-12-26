@@ -68,7 +68,10 @@ const Experience = () => {
         <a className='border-2 rounded-full py-3 px-5 bg-[#FFFFFF]' href=''>
           VIEW WORK
         </a>
-        <a className='border-2 rounded-full py-3 px-5' href=''>
+        <a
+          className='border-2 rounded-full py-3 px-5'
+          href='https://drive.google.com/file/d/1eH5EX1UAblNMbWJzBZ6KkDTve2ArUhkM/view?usp=drive_link'
+        >
           VIEW RESUME
         </a>
       </div>

@@ -9,31 +9,39 @@ const Navbar = () => {
       {/* nav-bar */}
       <div className='bg-[#EFEFEF] h-20 xl:mx-28 p-6 flex font-inter text-[#0E0E0E]'>
         <div className='basis-1/2 flex justify-start items-center space-x-16'>
-          <a className='text-xl font-semibold leading-[20px]' href='/'>
+          <a href='' className='text-xl font-semibold leading-[20px]'>
             PRAJWOL DEVKOTA
           </a>
-          <p className='hidden xl:block text-base font-semibold leading-[19px]'>
+          <a
+            href=''
+            className='hidden xl:block text-base font-semibold leading-[19px]'
+          >
             ABOUT
-          </p>
-          <p className='hidden xl:block text-base font-semibold leading-[19px]'>
+          </a>
+          <a
+            href=''
+            className='hidden xl:block text-base font-semibold leading-[19px]'
+          >
             WORK
-          </p>
+          </a>
         </div>
         <div className='basis-1/2 flex justify-end items-center space-x-4'>
           <p className='hidden xl:block text-base font-semibold leading-[19px]'>
             LET'S CONNECT
           </p>
           <div className='hidden xl:flex items-center space-x-1 bg-[#FFFFFF] border-2 rounded-full py-2 px-4 shadow-lg shadow-cyan-500/50'>
-            <p className='hidden xl:block text-base font-medium leading-[22px] '>
+            <p className='hidden xl:block text-base font-semibold leading-[22px]'>
               prajwol.devkota016@gmail.com
             </p>
-            <CopyLink
-              className='hidden xl:block'
-              theme='filled'
-              size='24'
-              fill='#333'
-              strokeWidth={2}
-            />
+            <a href='' className='flex '>
+              <CopyLink
+                className='hidden xl:block'
+                theme='filled'
+                size='24'
+                fill='#333'
+                strokeWidth={2}
+              />
+            </a>
           </div>
 
           <HamburgerButton
@@ -67,7 +75,7 @@ const Navbar = () => {
         <p className='mt-2'>(2022-PRESENT)</p>
       </div>
       {/* developer_image */}
-      <div className='w-full p-20'>
+      <div className='w-full py-10 px-20 md:py-20 md:px-40 lg:px-80'>
         <img
           className='border-transparent rounded-[7%] shadow-2xl'
           src={DeveloperImage}

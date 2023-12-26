@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Preloader from './components/Preloader';
 import Experience from './components/Experience';
+import About from './components/About';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -18,6 +19,7 @@ function App() {
     <>
       <Navbar />
       <Experience />
+      <About />
     </>
   );
 }
