@@ -5,25 +5,25 @@ const Work = () => {
     {
       id: 1,
       title: 'Tenzies Game',
-      image: '../../assets/project1.png',
+      image: '/src/assets/project1.png',
       url: 'https://github.com/ploosond/tenzies-game',
     },
     {
       id: 2,
       title: 'TailwindCSS Landing Page',
-      image: '../../assets/project1.png',
+      image: '/src/assets/project2.png',
       url: 'https://github.com/ploosond/Landing_Page_TailwindCSS',
     },
     {
       id: 3,
       title: 'Meme Generator',
-      image: '../../assets/project1.png',
+      image: '/src/assets/project3.png',
       url: 'https://github.com/ploosond/meme-generator',
     },
     {
       id: 4,
       title: 'Airbnb Experiences',
-      image: '../../assets/project1.png',
+      image: '/src/assets/project4.png',
       url: 'https://github.com/ploosond/airbnb-experiences',
     },
   ];
