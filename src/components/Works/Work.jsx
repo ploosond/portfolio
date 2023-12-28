@@ -31,12 +31,12 @@ const Work = () => {
     return (
       <div
         key={id}
+        style={{ backgroundImage: `url(${image})` }}
         className='bg-gradient-to-t from-[#92969B] to-[#C9CFD5] rounded-2xl text-[#0E0E0E] font-interTight text-[24px] lg:text-[32px]  leading-[28px] lg:leading-[32px] tracking-[-0.02em] font-semibold'
       >
         <a
           href={url}
           className='bg-cover h-[200px] lg:h-[400px] mx-20 lg:mx-0 lg:rounded-2xl flex justify-center items-center'
-          style={{ backgroundImage: `url(${image})` }}
         >
           {title}
         </a>
