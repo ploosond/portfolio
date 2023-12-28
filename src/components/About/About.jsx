@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Experience = () => {
+const About = () => {
   const data = [
     {
       id: 1,
@@ -69,7 +69,7 @@ const Experience = () => {
           VIEW WORK
         </a>
         <a
-          className='border-2 rounded-full py-3 px-5'
+          className='px-5 py-3 border-2 rounded-full'
           href='https://drive.google.com/file/d/1eH5EX1UAblNMbWJzBZ6KkDTve2ArUhkM/view?usp=drive_link'
         >
           VIEW RESUME
@@ -79,4 +79,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default About;

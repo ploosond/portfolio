@@ -7,10 +7,10 @@ import {
   YoutubeLogo,
 } from '@phosphor-icons/react';
 
-const About = () => {
+const Footer = () => {
   return (
     <>
-      {/* contact */}
+      {/* footer */}
       <div className='bg-[#0E0E0E] text-[#FFFFFF] font-interTight p-6 space-y-2'>
         <div className='flex flex-col items-start space-y-2 lg:mx-28'>
           <p className='text-[24px] 2xl:text-[28px] font-semibold leading-[28px] tracking-[-.02em] mb-6'>
@@ -40,7 +40,7 @@ const About = () => {
             <li className=''>
               <a
                 href='https://www.linkedin.com/in/prajwol-devkota/'
-                className='space-x-1 flex items-center'
+                className='flex items-center space-x-1'
               >
                 <LinkedinLogo size={20} color='#fdfcfc' weight='fill' />
                 <p>Linkedin</p>
@@ -49,7 +49,7 @@ const About = () => {
             <li className=''>
               <a
                 href='https://twitter.com/ploosond'
-                className='space-x-1 flex items-center'
+                className='flex items-center space-x-1'
               >
                 <TwitterLogo size={20} color='#fdfcfc' weight='fill' />
                 <p>Twitter</p>
@@ -59,7 +59,7 @@ const About = () => {
             <li className='row-start-3'>
               <a
                 href='https://www.instagram.com/ploosond/'
-                className='space-x-1 flex items-center'
+                className='flex items-center space-x-1'
               >
                 <InstagramLogo size={20} color='#fdfcfc' weight='fill' />
                 <p>Instagram</p>
@@ -68,7 +68,7 @@ const About = () => {
             <li className='row-start-3'>
               <a
                 href='https://www.youtube.com/channel/UCNdXvRU7qFj3rG4yEO8srHQ'
-                className='space-x-1 flex items-center'
+                className='flex items-center space-x-1'
               >
                 <YoutubeLogo size={20} color='#fdfcfc' weight='fill' />
                 <p>Youtube</p>
@@ -88,4 +88,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Footer;
