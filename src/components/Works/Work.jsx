@@ -5,7 +5,7 @@ const Work = () => {
     {
       id: 1,
       title: 'Tenzies Game',
-      image: '/src/assets/project1.png',
+      image: '/src/assets/idwwZIIqbma8TEQVuw7zr8Em7g.webp',
       url: 'https://github.com/ploosond/tenzies-game',
     },
     {
