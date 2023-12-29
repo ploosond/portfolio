@@ -5,7 +5,7 @@ const Work = () => {
     {
       id: 1,
       title: 'Tenzies Game',
-      image: '/src/assets/idwwZIIqbma8TEQVuw7zr8Em7g.webp',
+      image: '/src/assets/project1.png',
       url: 'https://github.com/ploosond/tenzies-game',
     },
     {
@@ -31,15 +31,17 @@ const Work = () => {
     return (
       <div
         key={id}
-        style={{ backgroundImage: `url(${image})` }}
-        className='bg-gradient-to-t from-[#92969B] to-[#C9CFD5] rounded-2xl text-[#0E0E0E] font-interTight text-[24px] lg:text-[32px]  leading-[28px] lg:leading-[32px] tracking-[-0.02em] font-semibold'
+        className='bg-gradient-to-t from-[#33373a] to-[#e3e5e7] rounded-2xl text-[#0E0E0E] font-interTight text-[24px] lg:text-[32px]  leading-[28px] lg:leading-[32px] tracking-[-0.02em] font-semibold flex flex-col justify-center items-center px-16 md:px-32 py-4'
       >
-        <a
-          href={url}
-          className='bg-cover h-[200px] lg:h-[400px] mx-20 lg:mx-0 lg:rounded-2xl flex justify-center items-center'
-        >
-          {title}
-        </a>
+        <p>{title}</p>
+        <img
+          className='object-cover object-top w-full h-48 p-4 md:h-56 lg:h-72 xl:h-96 rounded-2xl'
+          src={image}
+          alt=''
+        />
+        <p className='text-[#FFFFFF] text-[12px] lg:text-[24px]  leading-[14px] lg:leading-[16px] font-light'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
       </div>
     );
   });

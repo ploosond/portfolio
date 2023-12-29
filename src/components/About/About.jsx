@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const data = [
@@ -65,9 +66,12 @@ const About = () => {
       </p>
       <div className='mb-8'>{experienceList}</div>
       <div className='text-[18px] leading-[20px] tracking-[.02em] lg:text-[20px] font-semibold flex space-x-4'>
-        <a className='border-2 rounded-full py-3 px-5 bg-[#FFFFFF]' href=''>
+        <Link
+          className='border-2 rounded-full py-3 px-5 bg-[#FFFFFF]'
+          to='/work'
+        >
           VIEW WORK
-        </a>
+        </Link>
         <a
           className='px-5 py-3 border-2 rounded-full'
           href='https://drive.google.com/file/d/1eH5EX1UAblNMbWJzBZ6KkDTve2ArUhkM/view?usp=drive_link'

@@ -1,13 +1,23 @@
-import React from 'react';
-import { CopyLink, HamburgerButton } from '@icon-park/react';
+import React, { useRef, useState } from 'react';
+import { CopyLink } from '@icon-park/react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEquals } from '@fortawesome/free-solid-svg-icons';
 import { Link, NavLink } from 'react-router-dom';
 
-const Header = () => {
-  const email = 'prajwol.devkota016@gmail.com';
+const Header = ({ toggleNav }) => {
+  const emailRef = useRef();
+  const [isCopied, setIsCopied] = useState(false);
+
+  const copyToClipboard = () => {
+    const email = emailRef.current.textContent;
+    navigator.clipboard.writeText(email);
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 2000);
+  };
   return (
     <>
       {/* nav-bar */}
-      <div className='bg-[#EFEFEF] h-20 xl:mx-28 p-6 flex font-inter text-[#0E0E0E]'>
+      <div className='bg-[#EFEFEF] h-20  xl:mx-28 p-6 flex font-inter text-[#0E0E0E]'>
         <div className='flex items-center justify-start space-x-16 basis-1/2'>
           <Link to='/' className='text-xl font-semibold leading-[20px]'>
             PRAJWOL DEVKOTA
@@ -30,27 +40,28 @@ const Header = () => {
             LET'S CONNECT
           </p>
           <div className='hidden xl:flex items-center space-x-1 bg-[#FFFFFF] border-2 rounded-full py-2 px-4 shadow-lg shadow-cyan-500/50'>
-            <p className='hidden xl:block text-base font-semibold leading-[22px]'>
+            <p
+              ref={emailRef}
+              className='hidden xl:block text-base font-semibold leading-[22px]'
+            >
               prajwol.devkota016@gmail.com
             </p>
-            <a href='' className='flex '>
+            <button type='button' onClick={copyToClipboard}>
               <CopyLink
-                className='hidden xl:block'
-                theme='filled'
+                theme={!isCopied ? 'filled' : 'outline'}
                 size='24'
                 fill='#333'
                 strokeWidth={2}
               />
-            </a>
+            </button>
           </div>
-
-          <HamburgerButton
+          <FontAwesomeIcon
+            onClick={toggleNav}
             className='xl:hidden'
-            theme='outline'
-            size='24'
-            fill='#333'
-            strokeLinecap='square'
+            icon={faEquals}
+            size='2xl'
           />
+          {isCopied && <p className='absolute right-0 pr-6'>Email copied!</p>}
         </div>
       </div>
     </>

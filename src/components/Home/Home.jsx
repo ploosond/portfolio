@@ -6,7 +6,7 @@ const Home = () => {
     <>
       {/* homepage */}
       <div
-        className='flex flex-col justify-center items-center space-y-1 pt-20 pb-4 font-interTight text-[52px] leading-[42px] tracking-[-.06em] font-semibold md:text-[108px]
+        className='flex flex-col items-center space-y-1 pt-20 pb-4 font-interTight text-[52px] leading-[42px] tracking-[-.06em] font-semibold md:text-[108px]
         md:leading-[86px] lg:text-[150px]
         lg:leading-[128px]'
       >
@@ -26,7 +26,7 @@ const Home = () => {
         <p className='mt-2'>(2022-PRESENT)</p>
       </div>
       {/* developer_image */}
-      <div className='w-full px-20 py-10 md:py-20 md:px-40 lg:px-80'>
+      <div className='w-full px-[30%] py-10'>
         <img
           className='border-transparent rounded-[7%] shadow-2xl'
           src={DeveloperImage}
